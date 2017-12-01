@@ -1,0 +1,4 @@
+pyphotosorganizer/.logs/*
+pyphotosorganizer/source/*
+pyphotosorganizer/destination/*
+*.html
