@@ -101,7 +101,7 @@ class PhotosRenamer:
             #output = [day, month, year, '{0}{1}{2}-{3}{4}{5}'.format(day, month, year, hour, minute, second)]
             output = [day, month, year, '{0}-{1}-{2}-{3}{4}'.format(year,month, day, hour, minute)]
 
-        except Exception, ex:
+        except Exception as ex:
             self.log.warning('Exception : {0}'.format(str(ex))) # intentionally "warning" and not "exception"
 
         return output
@@ -178,13 +178,13 @@ class PhotosRenamer:
                             else:
                                 self.log.info('File already existing: {0}'.format(out_filename))
 
-                        except Exception, ex:
+                        except Exception as ex:
                             self.log.info('File has no exif, thus it skipped : {0}'.format(filename))
                             self.log.exception('Exception : {0}'.format(str(ex)))
                     else:
                         #log.info('File was skipped: {0}'.format(file))
                         self.process_new_extension(file, root)
-                except Exception, ex:
+                except Exception as ex:
                     self.log.exception('Exception : {0}'.format(str(ex)))
 
     # def bat_no_copied(self, files):
@@ -215,9 +215,9 @@ class PhotosRenamer:
                     not_copied_files.append(filename)
 
         if len(not_copied_files) > 0:
-            self.log.info('Not copied files:\n{0}'.format('\n'.join(not_copied_files)))
+            self.log.info('File NOT YET copied:\n{0}'.format('\n'.join(not_copied_files)))
         else:
-            self.log.info('All files from source where copied to the destination folder.')
+            self.log.info('All files from the source were copied into the destination folder')
 
 def main(source, dest, mode):
     """ Main method that starts other methods.

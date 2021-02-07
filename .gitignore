@@ -1,4 +1,16 @@
+# folders
+
+.venv/*
 pyphotosorganizer/.logs/*
 pyphotosorganizer/source/*
 pyphotosorganizer/destination/*
+
+# extentions
+
 *.html
+
+# files
+
+cmdInitiateEnv.bat
+cmdStartEnv.bat
+TODOs.txt

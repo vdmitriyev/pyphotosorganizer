@@ -1,6 +1,6 @@
 ### About
 
-A small Python script that helps to organize your photos/media backups properly. In this case "properly" means using EXIF metadata to copy and sort "RAW" copies of photos from a media devices like mobile phones into destination folder with "year-month" structure.
+A small Python script that helps to properly organize your photos/media backups. "Properly" means - by using EXIF metadata. It is used to copy and sort "RAW"/"original" copies of photos from a media devices (e.g. mobile phones, cameras) into a destination folder. The "year->month" structure is used to sort files.
 
 ### Dependencies
 
